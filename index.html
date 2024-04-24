@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign Up Form</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<script defer src="./script.js"></script>
+  </head>
+
+  <body>
+
+		<div class="logo-side">
+			<div class="logo-container">
+				<img src="img/odin-lined.png" alt="logo of 2d beared man called odin" />
+				<span id="logo-text">ODIN</span>
+			</div>
+
+			<div class="background-credit">
+				Photo by
+				<a
+					href="https://es.pngtree.com/freebackground/matrix-code-abstract-programming-background_1593627.html"
+					target="_blank"
+					rel="noreferrer noopener"
+					>PNGTREE
+				</a>
+				on 
+				<a href="https://es.pngtree.com/free-backgrounds-photos/programaci%C3%B3n" rel="noreferer noopener">
+					PNGTREE
+				</a>
+			</div>
+		</div>
+
+    <div class="form-side">
+      <div class="disclaimer-container">
+        <p id="disclaimer">
+          ¡Esto no es un verdadero servicio en línea! Usted sabe que necesita algo como
+          esto en su vida para ayudarle a realizar sus sueños más profundos.
+        </p>
+        <br>
+        <p id="sign-up-text">Registrate <em>ahora</em> para empezar.</p>
+        <p><em>Sabes</em> que quieres hacerlo.</p>
+      </div>
+
+      <form action="#">
+        <h2>Hagamoslo!</h2>
+
+        <div class="fields">
+          <div class="field">
+            <label for="first-name">Nombre</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Thor"
+              minlength="1"
+              required
+              maxlength="15"/>
+          </div>
+
+          <div class="field">
+            <label for="last-name">Apellido</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Odinson"
+              maxlength="20"/>
+          </div>
+
+          <div class="field">
+            <label for="email">Correo electronico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Thor@odinson.com"/>
+          </div>
+
+          <div class="field">
+            <label for="phone">Celular</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-15]{15}"
+              placeholder="(+57) 3000000000"/>
+          </div>
+
+          <div class="field">
+            <label for="password">Contraseña</label>
+            <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            required />
+            <p id="password-error-msg"></p>
+          </div>
+
+          <div class="field">
+            <label for="confirm-password">Confirmar Contraseña</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required/>
+          </div>
+
+        </div>
+
+        <button type="submit">Crear cuenta</button>
+
+      </form>
+
+      <p id="login">Ya tienes una cuenta? 
+        <a href="#">Entrar</a>
+      </p>
+
+    </div>
+
+  </body>
+	
+</html>

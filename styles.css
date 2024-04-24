@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Norse Bold";
+    src: url(fonts/Norse-Bold.otf);
+  }
+  
+  body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .logo-side {
+    height: inherit;
+    background-image: url(img/matrix.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .form-side {
+    height: inherit;
+    background-color: rgb(249, 250, 251);
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo-container {
+    margin-top: 160px;
+    padding: 15px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-container img {
+    width: 80px;
+    height: 110px;
+  }
+  
+  #logo-text {
+    font: 6rem "Norse Bold";
+    color: rgb(229, 231, 235);
+  }
+  
+  .background-credit {
+    color: white;
+    font-size: 1rem;
+    align-self: center;
+    margin: 20px;
+  }
+  
+  .background-credit a:link,
+  .background-credit a:visited {
+    color: rgb(229, 231, 235);
+  }
+  
+  .background-credit a:hover {
+    color: rgb(173, 216, 230);
+  }
+  
+  .background-credit a:active {
+    color: rgb(255, 0, 0);
+  }
+  
+  .background-credit a {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  #disclaimer {
+    margin-bottom: 0;
+  }
+  
+  #sign-up-text {
+    margin-top: 0;
+  }
+  
+  form {
+    box-shadow: rgb(221, 222, 222) 10px 5px 5px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  
+  .disclaimer-container {
+    margin: 80px 40px 40px;
+    width: 60%;
+  }
+  
+  .disclaimer-container > p {
+    font-size: 1.2rem;
+  }
+  
+  .fields {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    gap: 40px;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  button {
+    margin-top: 40px;
+    width: fit-content;
+    background-color: rgb(89, 109, 72);
+    color: rgb(229, 231, 235);
+    font-weight: 900;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+  }
+  
+  #login > a:link,
+  #login > a:visited {
+    color: rgb(89, 109, 72);
+    text-decoration: none;
+    font-weight: 800;
+  }
+  
+  #login {
+    margin-top: 40px;
+    margin-left: 40px;
+    font-weight: 100;
+  }
+  
+  input {
+    border: 1px solid rgb(229, 231, 235);
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  input:focus {
+    outline-color: rgb(29, 78, 216);
+  }
+  
+  input:invalid {
+    border-color: rgb(255, 0, 0);
+  }
+  
+  label {
+    margin-bottom: 3px;
+    font-weight: 400;
+  }
+  
+  #password-error-msg {
+    margin-top: 0;
+    font-size: 0.7rem;
+    color: rgb(255, 0, 0);
+  }
